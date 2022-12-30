@@ -4,7 +4,7 @@ import { SendNotification } from './send-notification';
 describe('Send Notification', () => {
   test('it should be able to send a notification', async () => {
     const notificationsRepository = new InMemoryNotificationsRepository();
-    const sendNotification = new SendNotification( notificationsRepository );
+    const sendNotification = new SendNotification(notificationsRepository);
 
     const { notification } = await sendNotification.execute({
       recipientId: 'idteste',
