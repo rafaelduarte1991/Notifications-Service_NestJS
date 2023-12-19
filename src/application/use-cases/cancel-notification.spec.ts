@@ -13,7 +13,7 @@ describe('Cancel Notification', () => {
     await cancelNotification.execute({
       notificationId: notification.id,
     });
-    expect(notificationsRepository.notifications[0].canceledAt).toEqual(
+    expect(notificationsRepository.notifications[0].cancelledAt).toEqual(
       expect.any(Date),
     );
   });
