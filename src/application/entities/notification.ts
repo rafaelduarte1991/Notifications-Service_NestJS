@@ -59,10 +59,10 @@ export class Notification {
     return this.props.readAt;
   }
   public cancel() {
-    this.props.canceledAt = new Date();
+    this.props.cancelledAt = new Date();
   }
-  public get canceledAt(): Date | null | undefined {
-    return this.props.canceledAt;
+  public get cancelledAt(): Date | null | undefined {
+    return this.props.cancelledAt;
   }
   public get createdAt(): Date {
     return this.props.createdAt;
